@@ -112,8 +112,8 @@ def plot_operation_times_medium_by_data_structure(x_values, y_values_random, y_v
     plt.figure()
 
     plt.plot(x_values, y_values_random, label=f"Random")
-    plt.plot(x_values, y_values_ascending, label=f"Ascending")
-    plt.plot(x_values, y_values_descending, label=f"Descending")
+    plt.plot(x_values, y_values_ascending, label=f"Crescente")
+    plt.plot(x_values, y_values_descending, label=f"Decrescente")
 
     plt.xlabel("Numero di operazioni effettuate")
     plt.ylabel(f"Tempo (secondi)")
@@ -133,8 +133,8 @@ def plot_operation_times_medium_by_array_type(x_values, y_values_heap, y_values_
     plt.figure()
 
     plt.plot(x_values, y_values_heap, label=f"Heap")
-    plt.plot(x_values, y_values_linked_list, label=f"Linked List")
-    plt.plot(x_values, y_values_ordered_linked_list, label=f"Ordered Linked List")
+    plt.plot(x_values, y_values_linked_list, label=f"Lista Concatenata")
+    plt.plot(x_values, y_values_ordered_linked_list, label=f"Lista Concatenata Ordinata")
 
     plt.xlabel("Numero di operazioni effettuate")
     plt.ylabel("Tempo (secondi)")

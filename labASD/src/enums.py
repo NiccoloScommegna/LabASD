@@ -3,14 +3,14 @@ from enum import Enum
 
 class DataType(Enum):
     HEAP = "Heap"
-    LINKED_LIST = "Linked List"
-    ORDERED_LINKED_LIST = "Ordered Linked List"
+    LINKED_LIST = "Lista Concatenata"
+    ORDERED_LINKED_LIST = "Lista Concatenata Ordinata"
 
 
 class ArrayType(Enum):
     RANDOM = "Random"
-    ASCENDING = "Ascending"
-    DESCENDING = "Descending"
+    ASCENDING = "Crescente"
+    DESCENDING = "Decrescente"
 
 
 class ArraySize(Enum):
