@@ -103,6 +103,8 @@ def plot_operation_times_small(x_values, y_values, data_structure_type, array_ty
     plt.ticklabel_format(axis='y', style='sci', scilimits=(0, 0))
     plt.tight_layout()
 
+    path = f"plots/plot_small/{operation}/{array_type.value}/small_{data_structure_type.value}_{array_type.value}_{operation}.png"
+    plt.savefig(path)
     plt.show()
 
 
@@ -124,6 +126,8 @@ def plot_operation_times_medium_by_data_structure(x_values, y_values_random, y_v
     plt.ticklabel_format(axis='y', style='sci', scilimits=(0, 0))
     plt.tight_layout()
 
+    path = f"plots/plot_medium/by_data_structure/{operation}/medium_{data_structure_type.value}_{operation}.png"
+    plt.savefig(path)
     plt.show()
 
 
@@ -145,6 +149,8 @@ def plot_operation_times_medium_by_array_type(x_values, y_values_heap, y_values_
     plt.ticklabel_format(axis='y', style='sci', scilimits=(0, 0))
     plt.tight_layout()
 
+    path = f"plots/plot_medium/by_array_type/{operation}/medium_{array_type.value}_{operation}.png"
+    plt.savefig(path)
     plt.show()
 
 
@@ -171,6 +177,8 @@ def plot_operation_times_large(x_values, y_values_insertion, y_values_extraction
     plt.ticklabel_format(axis='y', style='sci', scilimits=(0, 0))
     plt.tight_layout()
 
+    path = f"plots/plot_large/{data_structure_type.value}/large_{data_structure_type.value}_{array_type.value}.png"
+    plt.savefig(path)
     plt.show()
 
 
